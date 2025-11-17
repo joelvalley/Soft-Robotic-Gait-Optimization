@@ -58,11 +58,11 @@ the most to the output velocity: first leg pulse width, second
 leg pulse width, and the offset between the waveforms. As seen
 in Figure \ref{fig2}, the parameters from here onward denoted as
 x, y and z will be the two leg pulse durations, and the pulse 
-offset,respectively. Each leg has its own square waveform where
+offset, respectively. Each leg has its own square waveform where
 the current passes through the solenoid one way, then after the
 set pulse duration, the motor drivers will be used to change
 the direction of the current, thus switching the electromagnet's
-polarity. The offset, z, is the time at which one leg's Pulse
+polarity. The offset, z, is the time at which one leg's pulse
 waveform lags the other. By varying these parameters, the forward
 velocity of the robot should change, and there should be some
 value for each of these parameters that will maximize that
@@ -124,17 +124,80 @@ maximum. A medium value for the standard deviation was chosen so that
 the model will still learn a general pattern for the data and not
 solely values near the peak.
 
-Before passing the dataset to the neural netowork, it was normalized
-centered at zero, was split into a 80:20 train/test split, and the 
-data was batchified for better model training.
+Before passing the dataset to the neural network, it was normalized
+centered at zero using scikit-learn's StandardScaler. The data was 
+split into a 80:20 train/test split, and the data was batchified 
+for improved model training.
 
 \subsection{Model Architecture}
 The architecture of the neural network used to learn this
-dataset is a multiple regression neural network, with four
-linear layers and three GELU layers. The GELU activation function
-was chosen through experimentation, and was used instead of ReLU 
-to avoid dying ReLU, since our data is normalized and centered at
-zero, meaning we can have negative values.
+dataset is a feed-forward MLP neural network designed for 
+multiple regression, with four linear layers and three GELU layers. 
+The GELU activation function was chosen through experimentation, 
+and was used instead of ReLU to avoid dying ReLU, since our data 
+is normalized and centered at zero, meaning we can have negative 
+values. The model was trained using three input parameters 
+$(x, y, z)$, 1024 hidden units, and one output $(w)$.
+
+\subsection{Model Training}
+The model was trained for 2500 epochs using an ADAM optimizer for
+faster convergence, and MSE loss was chosen for its sensitivity to
+outliers. The learning rate of the optimizer is $1\times10^{-5}$,
+and was selected through testing trial-and-error. The model
+architecture and training parameters will be optimized in future
+sections using a ML pipeline library of sorts.
+
+\subsection{Results}
+After 2500 epochs of training, the model has a training loss of
+$0.0000018$, and a test loss of $0.0003811$. The loss decreased
+very fast in training, however, since the data is normalized, it
+was noticed that even a tiny amount of error in the scaled values
+results in a large error when the predictions are upscaled back to
+their original sizes. This is why the model was trained for so many
+epochs on a relatively simple dataset. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Loss_Curve.png}
+\caption{Loss Curves}
+\label{fig3}
+\end{figure}
+
+The model was then used to predict some points on the paraboloid
+and compare them to the actual values.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x$ & $y$ & $z$ & Pred (Scaled) & Actual (Scaled) & Pred (Real) & Actual (Real) \\ \hline
+200 & 150 & 25 & 1.19187 & 1.19070 & 31.95191 & 20.07000 \\ \hline
+0 & 0 & 0 & -4.86145 & -5.03438 & -61351.35938 & -63104.92000 \\ \hline
+400 & 300 & 50 & -4.93359 & -5.03438 & -62082.93359 & -63104.91000 \\ \hline
+150 & 78 & 100 & -0.12526 & -0.12177 & -13324.37207 & -13288.96000 \\ \hline
+\end{tabular}
+\caption{Sample Model Predictions}
+\label{table1}
+\end{table}
+
+As shown in Table \ref{table1}, the scaled real values are quite
+close to the actual values calculated using Equation \ref{w},
+however, there is still some unecessary error. Methods to further
+improve upon this error will be implemented and experimented with
+in future sections. For this initial test, these values are adequate.
+
+After the model learned the dataset, to test if the model could
+be used to accurately predict the input values that create the
+maximum speed, a tensor of random input values $(x, y, z)$ is
+optimized using another ADAM optimizer, and the loss function
+is the negative of the model's predictions to perform gradient
+ascent. After the random input tensor is optimized, the resulting
+input parameters to create the optimal speed predicted by the model
+were found to be:
+
+\[
+(x, y, z)
+\]
 
 \section{Spherical Dataset}
 \subsection{Dataset Generation}

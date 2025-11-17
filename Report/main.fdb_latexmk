@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1763339430.73842 "/Users/joelvalley/Desktop/Programming/Research Work/Soft-Robotic-Gait-Optimization/Report/main.tex" "main.pdf" "main" 1763339431.28437 0
-  "/Users/joelvalley/Desktop/Programming/Research Work/Soft-Robotic-Gait-Optimization/Report/main.tex" 1763339429.90357 5653 a41f97799ac2fa915446a41524019219 ""
+["pdflatex"] 1763342367.62339 "/Users/joelvalley/Desktop/Programming/Research Work/Soft-Robotic-Gait-Optimization/Report/main.tex" "main.pdf" "main" 1763342368.24448 0
+  "/Users/joelvalley/Desktop/Programming/Research Work/Soft-Robotic-Gait-Optimization/Report/main.tex" 1763342367.40894 8276 e32afa5bb057ea31290128431d5d4980 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/fontname/texfonts.map" 1741388039 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1741388039 5466553 2748998d7db8078826afa1f272036265 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1741388039 1004 54797486969f23fa377b128694d548df ""
@@ -27,6 +27,7 @@
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1741388039 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1741388039 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1741388039 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1741388039 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1741388039 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1741388039 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1741388039 40635 c40361e206be584d448876bba8a64a3b ""
@@ -82,10 +83,11 @@
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
   "/opt/homebrew/Cellar/texlive/20250308_2/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1741388039 3346124 822af4b3533d914509c9d079ab7ecdd9 ""
   "Leg_Pulse_Example_Plot.png" 1763276488.75798 50715 44b3340b379c047774d3bee4feb08997 ""
-  "main.aux" 1763339431.23574 1873 22ed9eee14f36a0c990fdccbb7c1c914 "pdflatex"
-  "main.out" 1763339431.2363 1274 651fe08c7665255d5e3257b0b1e541ba "pdflatex"
-  "main.tex" 1763339429.90357 5653 a41f97799ac2fa915446a41524019219 ""
-  "main.toc" 1763339431.23652 715 6fe0103adc49ce15b0033aea6ea7e6ee "pdflatex"
+  "Loss_Curve.png" 1763277464.42059 17149 470264aa80d447d793d5fa8965202a3a ""
+  "main.aux" 1763342368.1916 2499 c11b0f00d5b7555ad7b0ac4766a74ce8 "pdflatex"
+  "main.out" 1763342368.1922 1506 6b78c8a6b9df026517013ac430619be7 "pdflatex"
+  "main.tex" 1763342367.40894 8276 e32afa5bb057ea31290128431d5d4980 ""
+  "main.toc" 1763342368.19242 876 2d45effbac4daf8282f470625cb21be2 "pdflatex"
   "robot.jpg" 1763195293.34916 535890 7c2ca18d2d208751b9f33f530389de6b ""
   (generated)
   "main.aux"

@@ -180,6 +180,11 @@ INPUT ./Leg_Pulse_Example_Plot.png
 INPUT ./Leg_Pulse_Example_Plot.png
 INPUT ./Leg_Pulse_Example_Plot.png
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./Loss_Curve.png
+INPUT ./Loss_Curve.png
+INPUT ./Loss_Curve.png
+INPUT ./Loss_Curve.png
+INPUT ./Loss_Curve.png
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -189,3 +194,4 @@ INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/publi
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  16 NOV 2025 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.11.7)  16 NOV 2025 20:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,7 +351,7 @@ l.20 \newpage
 
 ]
 Chapter 1.
-<robot.jpg, id=60, 4047.12pt x 3035.34pt>
+<robot.jpg, id=70, 4047.12pt x 3035.34pt>
 File: robot.jpg Graphic file (type jpg)
 <use robot.jpg>
 Package pdftex.def Info: robot.jpg  used on input line 34.
@@ -361,7 +361,7 @@ Package pdftex.def Info: robot.jpg  used on input line 34.
 [2
 
  <./robot.jpg>]
-<Leg_Pulse_Example_Plot.png, id=67, 619.3539pt x 450.9648pt>
+<Leg_Pulse_Example_Plot.png, id=77, 619.3539pt x 450.9648pt>
 File: Leg_Pulse_Example_Plot.png Graphic file (type png)
 <use Leg_Pulse_Example_Plot.png>
 Package pdftex.def Info: Leg_Pulse_Example_Plot.png  used on input line 51.
@@ -377,28 +377,36 @@ Chapter 2.
 ]
 
 [5]
+<Loss_Curve.png, id=101, 409.7709pt x 328.8285pt>
+File: Loss_Curve.png Graphic file (type png)
+<use Loss_Curve.png>
+Package pdftex.def Info: Loss_Curve.png  used on input line 161.
+(pdftex.def)             Requested size: 344.005pt x 276.06352pt.
 
-[6] (./main.aux)
+
+[6 <./Loss_Curve.png>]
+
+[7] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 651FE08C7665255D5E3257B0B1E541BA;1274.
+(rerunfilecheck)             Checksum: 6B78C8A6B9DF026517013AC430619BE7;1506.
  ) 
 Here is how much of TeX's memory you used:
- 10266 strings out of 473190
- 159131 string characters out of 5704335
- 559331 words of memory out of 5000000
- 33384 multiletter control sequences out of 15000+600000
+ 10286 strings out of 473190
+ 159500 string characters out of 5704335
+ 560417 words of memory out of 5000000
+ 33399 multiletter control sequences out of 15000+600000
  568513 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,358b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 652107 bytes).
+ 75i,9n,79p,358b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (8 pages, 680433 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
